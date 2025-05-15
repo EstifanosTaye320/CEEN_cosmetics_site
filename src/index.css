@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes centered-bidirectional {
+  0% {
+    transform: translateX(1%);
+  }
+  50% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(1%);
+  }
+}
+.animate-centered-bidirectional {
+  animation: centered-bidirectional 30s linear infinite;
+}
+.group:hover .animate-centered-bidirectional {
+  animation-play-state: paused;
+}
