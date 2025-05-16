@@ -4,12 +4,11 @@ import lady2 from "../assets/lady2.svg";
 const ImageGrid = () => {
   return (
     <div className="container mx-auto py-8">
-      {/* First Flex Container */}
-      <div className="flex flex-col md:flex-row gap-8">
-        <div className="flex items-center justify-center">
+      <div className="flex flex-col lg:flex-row gap-8">
+        <div className="flex items-center justify-center order-2 lg:order-1">
           <img className="w-[400px] h-auto" src={lady1} alt="Image 1" />
         </div>
-        <div className="flex-1">
+        <div className="flex-1 lg:order-2">
           <h3 className="text-4xl font-bold mb-4">History</h3>
           <p className="text-gray-400 text-xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
@@ -26,8 +25,7 @@ const ImageGrid = () => {
         </div>
       </div>
 
-      {/* Second Flex Container */}
-      <div className="flex flex-col md:flex-row gap-8 mt-8">
+      <div className="flex flex-col lg:flex-row gap-8 mt-8">
         <div className="flex-1">
           <h3 className="text-4xl font-bold mb-4">Our Principles</h3>
           <p className="text-gray-400 text-xl">

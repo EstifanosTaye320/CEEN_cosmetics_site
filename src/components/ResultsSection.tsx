@@ -14,7 +14,7 @@ const ResultsSection: React.FC = () => {
       }}
     >
       <div className="flex flex-col items-center mb-8">
-        <h2 className="text-center text-4xl md:text-5xl font-semibold text-gray-900 mb-2">
+        <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-2">
           Cosmetics That Really Works
         </h2>
         <div className="w-60 h-[1.3px] bg-black"></div>

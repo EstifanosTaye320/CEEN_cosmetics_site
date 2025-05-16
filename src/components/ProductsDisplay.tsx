@@ -26,7 +26,7 @@ const ProductsDisplay: React.FC<ProductsDisplayProps> = ({
           {title}
           <div className="w-[200px] h-[1.3px] bg-black mx-auto mt-6 md:mt-3"></div>{" "}
         </h2>
-        <p className="text-center text-gray-700 max-w-[55%] mx-auto mb-10 md:mb-16">
+        <p className="text-center text-gray-700 w-[90%] md:w-[55%] mx-auto mb-10 md:mb-16">
           {introText}
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">

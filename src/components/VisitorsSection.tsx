@@ -15,7 +15,7 @@ const VisitStoreSection: React.FC = () => {
       }}
     >
       <div className="container mx-auto px-4 relative z-10 flex flex-col md:flex-row items-center gap-12 md:gap-8">
-        <div className="w-full md:w-7/12 text-white ml-10">
+        <div className="w-full xl:w-7/12 text-white ml-10">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 w-[80%]">
             Visit Our Store to Buy Beauty Products
           </h2>
@@ -37,7 +37,7 @@ const VisitStoreSection: React.FC = () => {
         <img
           src={cleaningCream}
           alt="Cleansing Cream Product"
-          className="absolute w-[850px] transform translate-x-1/2 -translate-y-4"
+          className="absolute w-[850px] transform translate-x-1/2 -translate-y-4 hidden xl:flex"
         />
       </div>
     </section>

@@ -6,8 +6,6 @@ import { ProductDetailData } from "../types";
 import ProductDetailCard from "../components/ProductDetailCard";
 import { ArrowLeft } from "lucide-react";
 
-// Removed unused imports like bottle and DetailsFooter
-
 interface DetailsPageProps {
   product: ProductDetailData | null;
   onBackToList: () => void;
@@ -24,9 +22,7 @@ const DetailsPage: React.FC<DetailsPageProps> = ({ product, onBackToList }) => {
         Back to all products
       </button>
       <div className=" mx-auto p-6">
-        {/* First Row: Image + Content */}
         <div className="flex flex-col md:flex-row gap-8 mb-10">
-          {/* Image Column */}
           <div className="md:w-1/2 flex items-center justify-center">
             <img src={upright_bottle} alt="bottle" />
           </div>
