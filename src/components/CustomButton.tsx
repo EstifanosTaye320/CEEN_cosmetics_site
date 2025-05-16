@@ -39,8 +39,6 @@ const CustomButton: React.FC<CustomButtonProps> = ({
     />
   );
 
-  const Element = to ? Link : "button";
-
   const commonProps = {
     className: clsx(baseStyles, variants[variant], className, {
       group: showArrow,
