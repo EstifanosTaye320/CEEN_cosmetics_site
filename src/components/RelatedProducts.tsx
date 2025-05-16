@@ -1,15 +1,13 @@
 import React from "react";
 
-// Define the structure for a single product (id is no longer needed here for the key)
 export interface Product {
   imageUrl: string;
   name: string;
 }
 
-// Define the props for the RelatedProducts component
 interface RelatedProductsProps {
   products: Product[];
-  title?: string; // Optional title, defaults to "Related products"
+  title?: string;
 }
 
 const RelatedProducts: React.FC<RelatedProductsProps> = ({
@@ -17,7 +15,7 @@ const RelatedProducts: React.FC<RelatedProductsProps> = ({
   title = "Related products",
 }) => {
   if (!products || products.length === 0) {
-    return null; // Don't render anything if there are no products
+    return null;
   }
 
   return (
@@ -27,7 +25,6 @@ const RelatedProducts: React.FC<RelatedProductsProps> = ({
           {title}
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-          {/* Using index as the key */}
           {products.map((product, index) => (
             <div key={index} className="group flex flex-col items-center">
               <div className="bg-soft-pink w-full aspect-square rounded-lg flex items-center justify-center p-4 sm:p-6 mb-4 overflow-hidden">

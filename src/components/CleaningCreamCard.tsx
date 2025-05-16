@@ -3,7 +3,6 @@ import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
 const ProductDisplay = () => {
   return (
     <div className="md:w-1/2">
-      {/* Rating */}
       <h2 className="text-5xl mb-2">Cleaning Cream</h2>
 
       <div className="flex items-center mb-3">
@@ -20,7 +19,6 @@ const ProductDisplay = () => {
         <span className="text-gray-500 text-sm ml-1">(1 customer review)</span>
       </div>
 
-      {/* Description */}
       <p className="text-gray-600 text-sm my-20 w-[80%]">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
         tempus enim massa, sed finibus leo consectetur a. Fusce quis vulputate
@@ -29,7 +27,6 @@ const ProductDisplay = () => {
         ad diam altera.
       </p>
 
-      {/* Product Info */}
       <div className="border-t border-gray-200 pt-4 mb-6">
         <h3 className="text-xl font-semibold mb-3">Info</h3>
         <ul className="text-xs text-gray-500 space-y-1">
@@ -46,7 +43,6 @@ const ProductDisplay = () => {
         </ul>
       </div>
 
-      {/* Share */}
       <div className="border-t border-gray-200 pt-4">
         <p className="text-xl font-semibold mb-4">Share:</p>
         <div className="flex gap-6">

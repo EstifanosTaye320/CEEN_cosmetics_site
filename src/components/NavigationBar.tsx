@@ -80,7 +80,7 @@ const NavigationBar = () => {
 
       <ul
         ref={desktopNavRef}
-        className="hidden md:flex list-none m-0 p-0 space-x-10 lg:space-x-20 font-semibold"
+        className="hidden md:flex list-none m-0 p-0 space-x-10 lg:space-x-20 font-semibold relative"
       >
         {pages.map((page) => (
           <li key={page.path}>
@@ -96,6 +96,13 @@ const NavigationBar = () => {
             </Link>
           </li>
         ))}
+        <div
+          className={`absolute -bottom-7 h-0.5 bg-rose-600 transition-all transform md:-translate-x-10 lg:-translate-x-20 duration-300 hidden md:block`}
+          style={{
+            left: `${lineStyle.left}px`,
+            width: `${lineStyle.width}px`,
+          }}
+        />
       </ul>
 
       <button
@@ -131,14 +138,6 @@ const NavigationBar = () => {
           </ul>
         </div>
       )}
-
-      <div
-        className={`absolute bottom-0 h-0.5 bg-rose-600 transition-all duration-300 hidden md:block`}
-        style={{
-          left: `${lineStyle.left}px`,
-          width: `${lineStyle.width}px`,
-        }}
-      />
     </nav>
   );
 };

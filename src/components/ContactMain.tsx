@@ -5,8 +5,7 @@ import map from "../assets/map.svg";
 
 const ContactMain = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-      {/* Left Column */}
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
       <div>
         <div className="mb-8">
           <h2 className="text-4xl font-bold mb-4">
@@ -37,7 +36,6 @@ const ContactMain = () => {
         </div>
       </div>
 
-      {/* Right Column */}
       <div className="relative">
         <div className="absolute top-0 right-0 bg-pink-400 rounded-tr-3xl h-full w-1/2"></div>
         <div className="p-8">

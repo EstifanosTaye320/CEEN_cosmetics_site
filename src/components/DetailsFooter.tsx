@@ -61,7 +61,7 @@ function DetailsFooter() {
         descriptionContent={descriptionText}
         additionalInfoContent={additionalInformation}
         reviewsContent={reviews}
-        reviewCount={currentReviewCount} // Pass the actual count
+        reviewCount={currentReviewCount}
       />
       <RelatedProducts products={realisticSampleProducts} />
     </>
