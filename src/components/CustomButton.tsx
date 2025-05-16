@@ -27,8 +27,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({
 
   const variants = {
     primary: "bg-[#ff69b4] text-white hover:bg-[#ff4da6]",
-    secondary:
-      "bg-pink-100 text-pink-400 hover:bg-pink-200 text-sm h-7 px-4 py-0",
+    secondary: "text-pink-400 hover:bg-pink-100 text-sm h-7 px-4 py-0",
   };
 
   const arrow = showArrow && (
