@@ -19,7 +19,7 @@ const HomePage = () => {
     >
       <div className="grid md:grid-cols-2 gap-12 items-center pt-20 px-[60px]">
         <div className="space-y-6">
-          <h1 className="text-5xl md:text-6xl font-bold leading-tight pb-7">
+          <h1 className="text-5xl md:text-4xl lg:text-6xl font-bold leading-tight pb-7">
             Natural Beauty, Perfected for You
           </h1>
           <p className="text-lg md:leading-none text-gray-400 md:text-lg font-normal ">
@@ -27,7 +27,7 @@ const HomePage = () => {
             products Our ingredients rich in antioxidants and deeply nourishing.
             Paired with this formula delivers proven results.
           </p>
-          <CustomButton text="Explore" />
+          <CustomButton text="Explore" to="/products" />
         </div>
 
         <div className="relative group left-2">
