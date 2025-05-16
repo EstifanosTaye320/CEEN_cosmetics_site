@@ -13,8 +13,8 @@ const Hero = ({ title }: HeroProps) => (
       className="w-full h-full object-cover"
     />
 
-    <div className="absolute inset-0 flex items-center justify-center -translate-x-[300px] translate-y-[20px]">
-      <h1 className="text-4xl md:text-[110px] font-bold tracking-wide p-4">
+    <div className="absolute inset-0 flex items-center justify-center -translate-x-[30%] translate-y-[20px]">
+      <h1 className="text-5xl lg:text-6xl xl:text-[110px] font-bold tracking-wide p-4">
         {title}
       </h1>
     </div>
